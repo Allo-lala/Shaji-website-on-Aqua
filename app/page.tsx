@@ -61,7 +61,7 @@ export default function HomePage() {
           <div className="flex items-center justify-center">
             <div className="relative">
               <img
-                src="/blockchain-verification-mobile.gif"
+                src="/modern-smartphone-mockup-showing-mobile-app-interf.jpg"
                 alt="Shaji Mobile App - Blockchain Verification Animation"
                 className="h-auto w-full max-w-[300px] rounded-3xl"
               />
