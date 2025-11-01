@@ -14,9 +14,17 @@ export function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <Link href="/" className="flex items-center gap-2">
+        {/* <Link href="/" className="flex items-center gap-2">
           <Shield className="h-6 w-6 text-primary" />
           <span className="text-xl font-semibold">Shaji</span>
+        </Link> */}
+
+        <Link href="/" className="flex items-center gap-2">
+          <img
+            src="/logo.png"
+            alt="Shaji logo"
+            className="h-8 w-auto" // Adjust size as needed
+          />
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

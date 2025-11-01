@@ -27,7 +27,7 @@ export default function HomePage() {
               and certificates without compromising privacy.
             </p>
 
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
+            {/* <div className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
               <Link href="/verify">
                 <Button size="lg" className="w-full sm:w-auto">
                   Verify a Document
@@ -38,17 +38,17 @@ export default function HomePage() {
                   Learn More
                 </Button>
               </Link>
-            </div>
+            </div> */}
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
               <p className="w-full text-sm text-muted-foreground sm:w-auto">Download the mobile app:</p>
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button variant="outline" size="sm" className="w-full gap-2 sm:w-auto bg-transparent">
                   <Apple className="h-4 w-4" />
                   App Store
                 </Button>
               </a>
-              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button variant="outline" size="sm" className="w-full gap-2 sm:w-auto bg-transparent">
                   <Smartphone className="h-4 w-4" />
                   Google Play
@@ -61,8 +61,8 @@ export default function HomePage() {
           <div className="flex items-center justify-center">
             <div className="relative">
               <img
-                src="/modern-smartphone-mockup-showing-mobile-app-interf.jpg"
-                alt="Shaji Mobile App - Blockchain Verification Animation"
+                src="/shaji.png"
+                alt="Shaji Mobile App Image"
                 className="h-auto w-full max-w-[300px] rounded-3xl"
               />
             </div>
@@ -192,17 +192,17 @@ export default function HomePage() {
             Join thousands of users who trust Shaji for secure document verification
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/verify">
-              <Button size="lg">Start Verification</Button>
+            <Link href="#">
+              <Button size="lg">Download Shaji</Button>
             </Link>
             <div className="flex items-center gap-3">
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="gap-2 bg-transparent">
                   <Apple className="h-5 w-5" />
                   iOS
                 </Button>
               </a>
-              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="gap-2 bg-transparent">
                   <Smartphone className="h-5 w-5" />
                   Android
@@ -219,7 +219,13 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-primary" />
+              <Link href="/" className="flex items-center gap-2">
+                <img
+                  src="/logo.png"
+                  alt="Shaji logo"
+                  className="h-8 w-auto" // Adjust size as needed
+                />
+              </Link>
               <span className="font-semibold">Shaji</span>
               <span className="text-sm text-muted-foreground">· Powered by Aqua Protocol</span>
             </div>
@@ -238,7 +244,7 @@ export default function HomePage() {
 
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/allo-lala"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground transition-colors hover:text-foreground"
@@ -249,7 +255,7 @@ export default function HomePage() {
                 </svg>
               </a>
               <a
-                href="https://x.com"
+                href="https://x.com/_alanyi_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground transition-colors hover:text-foreground"

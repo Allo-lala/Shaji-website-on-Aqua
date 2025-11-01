@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Shaji - Blockchain Academic Document Verification",
+  title: "Shaji - Verification",
   description:
     "Verify academic documents with blockchain trust using cryptographic proofs and zero-knowledge technology",
   generator: "v0.app",
