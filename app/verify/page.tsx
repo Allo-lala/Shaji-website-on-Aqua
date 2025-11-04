@@ -95,9 +95,9 @@ export default function VerifyPage() {
     const mockResult: VerificationResult = {
       status: Math.random() > 0.3 ? "authentic" : "invalid",
       documentType: "Bachelor's Degree",
-      institution: "University of Technology",
-      issueDate: "June 15, 2023",
-      studentName: "John Doe",
+      institution: "Victoria University ",
+      issueDate: "October 15, 2025",
+      studentName: "Kyagulanyi Allan",
       verificationId: "VRF-" + Math.random().toString(36).substring(2, 11).toUpperCase(),
       blockchainHash: "0x" + Math.random().toString(16).substring(2, 66),
     }
@@ -120,7 +120,7 @@ export default function VerifyPage() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm text-primary">
-              <Shield className="h-4 w-4" />
+              {/* <Shield className="h-4 w-4" /> */}
               Blockchain Verification
             </div>
             <h1 className="mb-4 text-4xl font-bold md:text-5xl text-balance">Verify Academic Document</h1>

@@ -300,7 +300,14 @@ export default function PricingPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-primary" />
+              <Link href="/" className="flex items-center gap-2">
+                <img
+                  src="/logo.png"
+                  alt="Shaji logo"
+                  className="h-8 w-auto" // Adjust size as needed
+                />
+              </Link>
+              {/* <Shield className="h-5 w-5 text-primary" /> */}
               <span className="font-semibold">Shaji</span>
               <span className="text-sm text-muted-foreground">· Powered by Aqua Protocol</span>
             </div>

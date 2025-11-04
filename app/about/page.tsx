@@ -12,7 +12,7 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="mx-auto mb-20 max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm text-primary">
-            <Shield className="h-4 w-4" />
+            {/* <Shield className="h-4 w-4" /> */}
             About Shaji
           </div>
           <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl text-balance">
@@ -179,15 +179,15 @@ export default function AboutPage() {
           <Card className="border-primary/20 bg-gradient-to-br from-primary/10 to-accent/10 p-8 md:p-12">
             <div className="grid gap-8 text-center md:grid-cols-3">
               <div>
-                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">10K+</div>
+                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">13</div>
                 <p className="text-muted-foreground">Documents Verified</p>
               </div>
               <div>
-                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">500+</div>
+                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">5</div>
                 <p className="text-muted-foreground">Partner Institutions</p>
               </div>
               <div>
-                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">50+</div>
+                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">2</div>
                 <p className="text-muted-foreground">Countries Supported</p>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function AboutPage() {
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">Built by Experts</h2>
             <p className="text-lg text-muted-foreground">
-              Our team combines expertise in blockchain, cryptography, and education technology
+              Our team combines expertise in blockchain, cryptography and education technology
             </p>
           </div>
 
@@ -238,7 +238,14 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-primary" />
+              <Link href="/" className="flex items-center gap-2">
+                <img
+                  src="/logo.png"
+                  alt="Shaji logo"
+                  className="h-8 w-auto" // Adjust size as needed
+                />
+              </Link>
+              {/* <Shield className="h-5 w-5 text-primary" /> */}
               <span className="font-semibold">Shaji</span>
               <span className="text-sm text-muted-foreground">· Powered by Aqua Protocol</span>
             </div>

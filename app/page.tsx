@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
           <div className="text-center lg:text-left">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm text-primary">
-              <Shield className="h-4 w-4" />
+              {/* <Shield className="h-4 w-4" /> */}
               Powered by Aqua Protocol
             </div>
 
