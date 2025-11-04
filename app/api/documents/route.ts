@@ -1,3 +1,18 @@
+export const dynamic = "force-dynamic"; // force dynamic rendering
+
+import { neon } from "@neondatabase/serverless";
+
+let sql: ReturnType<typeof neon> | null = null;
+
+if (process.env.DATABASE_URL) {
+  sql = neon(process.env.DATABASE_URL);
+} else {
+  console.warn("⚠️ DATABASE_URL not set — skipping Neon init at build time");
+}
+
+export default sql;
+ // app/api/documents/route.ts
+
 import { type NextRequest, NextResponse } from "next/server"
 import { getUserByWallet, createUser, getUserDocuments, createDocument } from "@/lib/db"
 
