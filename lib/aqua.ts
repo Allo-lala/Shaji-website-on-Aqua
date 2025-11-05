@@ -1,4 +1,5 @@
 import { Aquafier } from "aqua-js-sdk/web"
+// import Aquafier from 'aqua-js-sdk/react-native';
 import { ethers } from "ethers"
 
 // Initialize Aqua SDK
@@ -10,7 +11,7 @@ export async function getAquafier(): Promise<Aquafier> {
   }
 
   // Initialize with ethers provider
-  // In production, this should use the user's wallet provider
+  // In production, I should use the user's wallet provider
   const provider = new ethers.BrowserProvider(window.ethereum as any)
   const signer = await provider.getSigner()
 

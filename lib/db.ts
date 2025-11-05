@@ -1,7 +1,7 @@
 import { neon } from "@neondatabase/serverless"
 
 // Create a reusable SQL client
-export const sql = neon(process.env.NEON_DATABASE_URL!)
+export const sql = neon(process.env.NEON_NEON_DATABASE_URL!)
 
 // Database query helpers
 export async function getUserByWallet(walletAddress: string) {
