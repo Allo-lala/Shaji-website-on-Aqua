@@ -44,7 +44,7 @@
     "@solana-program/system": "latest",
     "@solana-program/token": "latest",
     "@solana/kit": "latest",
-    "@vercel/analytics": "latest",
+    "@vercel/analytics": "^1.5.0",
     "aqua-js-sdk": "^3.2.1-45",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",

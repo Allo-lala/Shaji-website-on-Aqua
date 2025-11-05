@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Shield, Lock, Zap, CheckCircle, FileCheck, Globe, Apple, Smartphone } from "lucide-react"
+import { Analytics } from "@vercel/analytics/next" // Add this line Vercel Analytics
 
 export default function HomePage() {
   return (
@@ -276,3 +277,5 @@ export default function HomePage() {
     </div>
   )
 }
+
+      <Analytics />// Add this line Vercel Analytics
