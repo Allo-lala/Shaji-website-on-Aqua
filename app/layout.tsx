@@ -10,9 +10,10 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Shaji - Verification",
-  description:
-    "Verify academic documents with blockchain trust using cryptographic proofs and zero-knowledge technology",
-  generator: "v0.app",
+  icons: {
+    icon: "/logo.png", 
+  
+  },
 }
 
 export default function RootLayout({
