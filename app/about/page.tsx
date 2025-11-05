@@ -31,14 +31,15 @@ export default function AboutPage() {
               <div>
                 <h2 className="mb-4 text-3xl font-bold">Our Mission</h2>
                 <p className="mb-4 text-muted-foreground leading-relaxed">
-                  We believe that academic credentials should be instantly verifiable, completely secure, and
-                  universally trusted. Traditional verification methods are slow, expensive, and vulnerable to fraud.
+                  To make academic credentials instantly verifiable, fully secure, and universally trusted. Shaji leverages the 
+                  Aqua blockchain to eliminate slow, costly and fraud-prone verification, creating immutable records 
+                  that are trusted worldwide.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                {/* <p className="text-muted-foreground leading-relaxed">
                   Shaji eliminates these problems by using the Aqua Protocol blockchain to create an immutable,
                   cryptographically secure record of every academic document, making verification instant and
                   fraud-proof.
-                </p>
+                </p> */}
               </div>
               <div className="flex items-center justify-center">
                 <div className="relative">
@@ -60,8 +61,8 @@ export default function AboutPage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
                 <Lock className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Security First</h3>
@@ -71,8 +72,8 @@ export default function AboutPage() {
               </p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
                 <Users className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Privacy Matters</h3>
@@ -82,8 +83,8 @@ export default function AboutPage() {
               </p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg ">
                 <Zap className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Speed & Efficiency</h3>
@@ -93,8 +94,8 @@ export default function AboutPage() {
               </p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
                 <Globe className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Global Access</h3>
@@ -104,8 +105,8 @@ export default function AboutPage() {
               </p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg ">
                 <Target className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Accuracy</h3>
@@ -115,8 +116,8 @@ export default function AboutPage() {
               </p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg ">
                 <Shield className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Trust</h3>
@@ -204,8 +205,8 @@ export default function AboutPage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            <Card className="border-border/50 bg-card p-6 text-center">
-              <div className="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg ">
                 <Users className="h-10 w-10 text-primary" />
               </div>
               <h3 className="mb-1 text-lg font-semibold">Blockchain Engineers</h3>
@@ -214,16 +215,16 @@ export default function AboutPage() {
               </p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6 text-center">
-              <div className="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full">
                 <Shield className="h-10 w-10 text-primary" />
               </div>
               <h3 className="mb-1 text-lg font-semibold">Security Specialists</h3>
               <p className="text-sm text-muted-foreground">Dedicated to protecting your data and privacy</p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6 text-center">
-              <div className="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+              <div className="mb-4 inline-flex h-20 w-20 items-center justify-center rounded-full ">
                 <Target className="h-10 w-10 text-primary" />
               </div>
               <h3 className="mb-1 text-lg font-semibold">Education Advisors</h3>
@@ -245,7 +246,6 @@ export default function AboutPage() {
                   className="h-8 w-auto" // Adjust size as needed
                 />
               </Link>
-              {/* <Shield className="h-5 w-5 text-primary" /> */}
               <span className="font-semibold">Shaji</span>
               <span className="text-sm text-muted-foreground">· Powered by Aqua Protocol</span>
             </div>

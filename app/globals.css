@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated theme for Shaji - dark, professional blockchain aesthetic */
   --background: oklch(0.98 0.005 240);
   --foreground: oklch(0.12 0.01 240);
   --card: oklch(1 0 0);

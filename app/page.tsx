@@ -81,8 +81,8 @@ export default function HomePage() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <Card className="border-border/50 bg-card p-6">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
               <Lock className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 text-xl font-semibold">Zero-Knowledge Proofs</h3>
@@ -91,8 +91,9 @@ export default function HomePage() {
             </p>
           </Card>
 
-          <Card className="border-border/50 bg-card p-6">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+          {/* Card 2 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
               <Zap className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 text-xl font-semibold">Instant Verification</h3>
@@ -101,8 +102,9 @@ export default function HomePage() {
             </p>
           </Card>
 
-          <Card className="border-border/50 bg-card p-6">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+          {/* Card 3 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
               <Shield className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 text-xl font-semibold">Blockchain Security</h3>
@@ -111,8 +113,9 @@ export default function HomePage() {
             </p>
           </Card>
 
-          <Card className="border-border/50 bg-card p-6">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+          {/* Card 4 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
               <FileCheck className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 text-xl font-semibold">Multiple Document Types</h3>
@@ -121,8 +124,9 @@ export default function HomePage() {
             </p>
           </Card>
 
-          <Card className="border-border/50 bg-card p-6">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+          {/* Card 5 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
               <Globe className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 text-xl font-semibold">Global Acceptance</h3>
@@ -131,8 +135,9 @@ export default function HomePage() {
             </p>
           </Card>
 
-          <Card className="border-border/50 bg-card p-6">
-            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+          {/* Card 6 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
               <CheckCircle className="h-6 w-6 text-primary" />
             </div>
             <h3 className="mb-2 text-xl font-semibold">Easy Integration</h3>
@@ -142,6 +147,7 @@ export default function HomePage() {
           </Card>
         </div>
       </section>
+
 
       {/* How It Works */}
       <section className="container mx-auto px-4 py-20">
@@ -153,7 +159,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl">
           <div className="grid gap-8 md:grid-cols-3">
             <div className="text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-2xl font-bold text-primary">
+              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full text-2xl font-bold text-primary">
                 1
               </div>
               <h3 className="mb-2 text-xl font-semibold">Upload Document</h3>
@@ -163,7 +169,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-2xl font-bold text-primary">
+              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full  text-2xl font-bold text-primary">
                 2
               </div>
               <h3 className="mb-2 text-xl font-semibold">Cryptographic Verification</h3>
@@ -173,7 +179,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center">
-              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-2xl font-bold text-primary">
+              <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full  text-2xl font-bold text-primary">
                 3
               </div>
               <h3 className="mb-2 text-xl font-semibold">Get Results</h3>
@@ -278,4 +284,4 @@ export default function HomePage() {
   )
 }
 
-      <Analytics />// Add this line Vercel Analytics
+      <Analytics />//  Vercel Analytics

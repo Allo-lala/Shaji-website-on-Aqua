@@ -26,7 +26,7 @@ export default function FeaturesPage() {
         {/* Hero Section */}
         <div className="mx-auto mb-20 max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm text-primary">
-            <Zap className="h-4 w-4" />
+            {/* <Zap className="h-4 w-4" /> */}
             Platform Features
           </div>
           <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl text-balance">
@@ -38,81 +38,83 @@ export default function FeaturesPage() {
           </p>
         </div>
 
-        {/* Core Features */}
-        <section className="mb-20">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold md:text-4xl">Core Features</h2>
-            <p className="text-lg text-muted-foreground">
-              Powerful capabilities designed for institutions, employers, and students
+         {/* Features Grid */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-bold md:text-4xl">Core Features</h2>
+          <p className="text-lg text-muted-foreground">
+            Powerful capabilities designed for institutions, employers, and students
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {/* Card 1 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+              <Lock className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="mb-2 text-xl font-semibold">Zero-Knowledge Proofs</h3>
+            <p className="text-muted-foreground">
+              Verify credentials without exposing sensitive personal information using advanced cryptography
             </p>
-          </div>
+          </Card>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Lock className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Zero-Knowledge Verification</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Verify credentials without exposing sensitive personal information using advanced cryptographic proofs
-                that protect student privacy.
-              </p>
-            </Card>
+          {/* Card 2 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+              <Zap className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="mb-2 text-xl font-semibold">Instant Verification</h3>
+            <p className="text-muted-foreground">
+              Get results in seconds, not days. No more waiting for manual verification processes
+            </p>
+          </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Zap className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Instant Results</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Get verification results in seconds, not days. Our blockchain-powered system provides real-time
-                authentication of academic documents.
-              </p>
-            </Card>
+          {/* Card 3 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+              <Shield className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="mb-2 text-xl font-semibold">Blockchain Security</h3>
+            <p className="text-muted-foreground">
+              Immutable records on Aqua Protocol ensure documents cannot be forged or tampered with
+            </p>
+          </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Shield className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Blockchain Security</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Immutable records on Aqua Protocol ensure documents cannot be forged, tampered with, or fraudulently
-                created.
-              </p>
-            </Card>
+          {/* Card 4 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+              <FileCheck className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="mb-2 text-xl font-semibold">Multiple Document Types</h3>
+            <p className="text-muted-foreground">
+              Verify diplomas, transcripts, certificates, and more from institutions worldwide
+            </p>
+          </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <FileCheck className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Multiple Document Types</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Support for diplomas, transcripts, certificates, badges, and more from institutions worldwide.
-              </p>
-            </Card>
+          {/* Card 5 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+              <Globe className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="mb-2 text-xl font-semibold">Global Acceptance</h3>
+            <p className="text-muted-foreground">
+              Recognized by employers and institutions across the world for reliable verification
+            </p>
+          </Card>
 
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Globe className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Global Coverage</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Verify credentials from institutions in over 50 countries with support for multiple languages and
-                formats.
-              </p>
-            </Card>
-
-            <Card className="border-border/50 bg-card p-6">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Smartphone className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 text-xl font-semibold">Mobile-First Design</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Easy-to-use mobile app makes verification accessible anywhere, anytime, from any device.
-              </p>
-            </Card>
-          </div>
-        </section>
+          {/* Card 6 */}
+          <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-64">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg">
+              <CheckCircle className="h-6 w-6 text-primary" />
+            </div>
+            <h3 className="mb-2 text-xl font-semibold">Easy Integration</h3>
+            <p className="text-muted-foreground">
+              Simple mobile app interface makes verification accessible to everyone
+            </p>
+          </Card>
+        </div>
+      </section>
 
         {/* For Institutions */}
         <section className="mb-20">
@@ -130,7 +132,7 @@ export default function FeaturesPage() {
 
             <div className="grid gap-6 md:grid-cols-2">
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -142,7 +144,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -154,7 +156,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -166,7 +168,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -178,7 +180,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -190,7 +192,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
                   <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -220,7 +222,7 @@ export default function FeaturesPage() {
 
             <div className="grid gap-6 md:grid-cols-2">
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -232,7 +234,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ">
                   <BarChart3 className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -244,7 +246,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ">
                   <Eye className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -256,7 +258,7 @@ export default function FeaturesPage() {
               </div>
 
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ">
                   <Database className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -278,37 +280,48 @@ export default function FeaturesPage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="border-border/50 bg-card p-6 text-center">
-              <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+            <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-56">
+              <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg">
                 <Lock className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mb-2 font-semibold">End-to-End Encryption</h3>
-              <p className="text-sm text-muted-foreground">All data encrypted in transit and at rest</p>
+              <p className="text-sm text-muted-foreground">
+                All data encrypted in transit and at rest
+              </p>
             </Card>
 
-            <Card className="border-border/50 bg-card p-6 text-center">
-              <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Shield className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 font-semibold">Immutable Records</h3>
-              <p className="text-sm text-muted-foreground">Blockchain ensures tamper-proof verification</p>
-            </Card>
+            {/* Card 2 */}
+              <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-56">
+                <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg ">
+                  <Shield className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="mb-2 font-semibold">Immutable Records</h3>
+                <p className="text-sm text-muted-foreground">
+                  Blockchain ensures tamper-proof verification
+                </p>
+              </Card>
 
-            <Card className="border-border/50 bg-card p-6 text-center">
-              <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Eye className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 font-semibold">Privacy First</h3>
-              <p className="text-sm text-muted-foreground">Zero-knowledge proofs protect personal data</p>
-            </Card>
+              {/* Card 3 */}
+              <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-56">
+                <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg ">
+                  <Eye className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="mb-2 font-semibold">Privacy First</h3>
+                <p className="text-sm text-muted-foreground">
+                  Zero-knowledge proofs protect personal data
+                </p>
+              </Card>
 
-            <Card className="border-border/50 bg-card p-6 text-center">
-              <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <CheckCircle className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="mb-2 font-semibold">Compliance Ready</h3>
-              <p className="text-sm text-muted-foreground">FERPA, GDPR, and SOC 2 compliant</p>
-            </Card>
+              {/* Card 4 */}
+              <Card className="border-border/50 bg-card p-6 flex flex-col items-center justify-center text-center h-56">
+                <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-lg ">
+                  <CheckCircle className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="mb-2 font-semibold">Compliance Ready</h3>
+                <p className="text-sm text-muted-foreground">
+                  FERPA, GDPR, and SOC 2 compliant
+                </p>
+              </Card>
           </div>
         </section>
 

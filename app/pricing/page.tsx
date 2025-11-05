@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Shield, Check, Zap, Building2, Users } from "lucide-react"
+import {  Check, Users } from "lucide-react"
 
 export default function PricingPage() {
   return (
@@ -142,7 +142,7 @@ export default function PricingPage() {
             </ul>
 
             <a
-              href="https://wa.me/?text=Hi%2C%20I'm%20interested%20in%20Shaji%20Enterprise%20pricing"
+              href="https://wa.me/256781928954?text=Hi%2C%20I'm%20interested%20in%20Shaji%20Enterprise%20pricing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -159,7 +159,7 @@ export default function PricingPage() {
             <div className="grid gap-8 md:grid-cols-2 md:items-center">
               <div>
                 <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm text-primary">
-                  <Shield className="h-4 w-4" />
+                  {/* <Shield className="h-4 w-4" /> */}
                   For Educational Institutions
                 </div>
                 <h2 className="mb-4 text-3xl font-bold md:text-4xl">Institutional Pricing</h2>
@@ -188,7 +188,7 @@ export default function PricingPage() {
               </div>
               <div className="flex items-center justify-center">
                 <a
-                  href="https://wa.me/?text=Hi%2C%20I'd%20like%20to%20request%20a%20demo%20of%20Shaji"
+                  href="https://wa.me/256781928954?text=Hi%2C%20I'd%20like%20to%20request%20a%20demo%20of%20Shaji"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -95,7 +95,7 @@ export default function VerifyPage() {
     const mockResult: VerificationResult = {
       status: Math.random() > 0.3 ? "authentic" : "invalid",
       documentType: "Bachelor's Degree",
-      institution: "Victoria University ",
+      institution: "Daystar University ",
       issueDate: "October 15, 2025",
       studentName: "Kyagulanyi Allan",
       verificationId: "VRF-" + Math.random().toString(36).substring(2, 11).toUpperCase(),
