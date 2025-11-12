@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react"
 import { usePrivy, useWallets } from "@privy-io/react-auth"
+import { useRouter } from "next/navigation"
 
 interface AuthContextType {
   isAuthenticated: boolean
@@ -18,11 +19,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const privy = usePrivy()
   const { wallets } = useWallets()
   const [fallbackReady, setFallbackReady] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (!privy.ready) {
-        console.log("[v0] Privy initialization timeout - using fallback ready state")
+        console.log(" Privy initialization timeout - using fallback ready state")
         setFallbackReady(true)
       }
     }, 3000) // 3 second timeout
@@ -30,11 +32,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => clearTimeout(timeout)
   }, [privy.ready])
 
+  useEffect(() => {
+    if (privy.authenticated && wallets[0]?.address) {
+      console.log(" Wallet connected, redirecting to dashboard")
+      router.push("/dashboard")
+    }
+  }, [privy.authenticated, wallets, router])
+
   const handleLogin = async () => {
     try {
       await privy.login()
     } catch (error) {
-      console.error("[v0] Login error:", error)
+      console.error(" Login error:", error)
     }
   }
 
@@ -42,7 +51,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       privy.logout()
     } catch (error) {
-      console.error("[v0] Logout error:", error)
+      console.error(" Logout error:", error)
     }
   }
 

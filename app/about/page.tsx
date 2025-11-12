@@ -243,7 +243,7 @@ export default function AboutPage() {
                 <img
                   src="/logo.png"
                   alt="Shaji logo"
-                  className="h-8 w-auto" // Adjust size as needed
+                  className="h-8 w-auto"
                 />
               </Link>
               <span className="font-semibold">Shaji</span>

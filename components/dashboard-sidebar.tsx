@@ -43,7 +43,9 @@ export function DashboardSidebar() {
         <div className="flex h-full flex-col">
           {/* Logo */}
           <div className="flex h-16 items-center gap-2 border-b border-border px-6">
-            <Shield className="h-6 w-6 text-primary" />
+            <Link href="/" className="flex items-center gap-2">
+              <img src="/logo.png" alt="Shaji logo" className="h-8 w-auto" />
+            </Link>
             <span className="text-xl font-semibold">Shaji</span>
           </div>
 

@@ -1,11 +1,12 @@
 "use client"
 
-import { FileText, Upload, Search, Filter } from "lucide-react"
+import { FileText, Upload, Search, Filter, CheckCircle2, Clock, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
 import { useAuth } from "@/lib/auth-context"
 import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
 
 interface Document {
   id: number
@@ -21,6 +22,8 @@ export default function DashboardPage() {
   const { walletAddress } = useAuth()
   const [documents, setDocuments] = useState<Document[]>([])
   const [loading, setLoading] = useState(true)
+  const [showUploadDialog, setShowUploadDialog] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     if (walletAddress) {
@@ -42,6 +45,21 @@ export default function DashboardPage() {
     }
   }
 
+  const handleUploadClick = () => {
+    router.push("/dashboard/verify")
+  }
+
+  const getStatusIcon = (status: string) => {
+    switch (status) {
+      case "verified":
+        return <CheckCircle2 className="h-4 w-4 text-green-500" />
+      case "pending":
+        return <Clock className="h-4 w-4 text-yellow-500" />
+      default:
+        return <AlertCircle className="h-4 w-4 text-gray-500" />
+    }
+  }
+
   if (loading) {
     return <div className="flex items-center justify-center py-12">Loading...</div>
   }
@@ -54,9 +72,9 @@ export default function DashboardPage() {
           <h2 className="text-2xl font-bold">My Documents</h2>
           <p className="text-sm text-muted-foreground">Manage and verify your academic documents</p>
         </div>
-        <Button className="gap-2">
+        <Button className="gap-2" onClick={handleUploadClick}>
           <Upload className="h-4 w-4" />
-          Upload Document
+          Verify Document
         </Button>
       </div>
 
@@ -97,13 +115,16 @@ export default function DashboardPage() {
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="text-muted-foreground">Status</span>
-                <span
-                  className={`font-medium capitalize ${
-                    doc.verification_status === "verified" ? "text-green-500" : "text-yellow-500"
-                  }`}
-                >
-                  {doc.verification_status}
-                </span>
+                <div className="flex items-center gap-1">
+                  {getStatusIcon(doc.verification_status)}
+                  <span
+                    className={`font-medium capitalize ${
+                      doc.verification_status === "verified" ? "text-green-500" : "text-yellow-500"
+                    }`}
+                  >
+                    {doc.verification_status}
+                  </span>
+                </div>
               </div>
             </div>
           </Card>
@@ -117,10 +138,12 @@ export default function DashboardPage() {
             <FileText className="h-12 w-12 text-muted-foreground" />
           </div>
           <h3 className="text-lg font-semibold mb-2">No documents yet</h3>
-          <p className="text-sm text-muted-foreground mb-4">Upload your first academic document to get started</p>
-          <Button className="gap-2">
+          <p className="text-sm text-muted-foreground mb-4">
+            Upload your first academic document to get started with verification
+          </p>
+          <Button className="gap-2" onClick={handleUploadClick}>
             <Upload className="h-4 w-4" />
-            Upload Document
+            Verify Document
           </Button>
         </div>
       )}

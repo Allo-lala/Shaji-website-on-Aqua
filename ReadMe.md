@@ -1,27 +1,49 @@
-#  My shaji Web Project
+## 🌍 Shaji 
 
-This project is a full-stack web application built with **Next.js**, **PostgreSQL**, **Aqua SDK ** and **TypeScript** ** js ** 
-It demonstrates database-driven features, API routing, and modern UI components optimized for performance and scalability.
+Shaji comes from the Kiswahili word “Uthibitishaji” meaning verification — a name that captures the app’s purpose perfectly.
+It is an Aqua -powered verification platform that allows users to authenticate academic documents with trust, transparency and ease.
 
+The web app allows users to connect their crypto wallet, access a personalized dashboard, upload documents, and verify their authenticity.
+The mobile app brings the same experience on the go — intuitive, lightweight, and optimized for real users.
 
-## ⚙️ Setup & Installation
+## 🚀 About the Project
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Allo-lala/Shaji-website-on-Aqua
-   cd Shaji-website-on-Aqua
-## You should see something like this 
+This project is a full-stack web and mobile solution built with:
+**Aqua SDK** 
+**Next.js** 
+**React Native** for the mobile app
+**PostgreSQL** 
+**TypeScript** 
+
+## 🖥️ Quick Preview
    ![Home Page](public/one.png)
-## Connect your wallet
+
+## Connect Your Wallet
    ![Wallet Page](public/two.png)
 
-## Then you can choose a file 
-  ![Choose file](public/F-verify.png)
 ## Upload 
   ![Upload file](public/upload.png)
+## Dashboard Overview
+  ![Upload file](public/fine.png)
 
 ## Congrats 
   ![Success Page](public/verified.png)
 
 ## Ooops 
   ![sorry Page](public/failed.png)  
+
+## 👥 Team
+
+| Name                 | Role                                | GitHub                                     |
+| -------------------- | ----------------------------------- | ------------------------------------------ |
+| **Kyagulanyi Allan** | Full Stack Developer                | [@Allo-lala](https://github.com/Allo-lala) |
+| **WiberForce**       | UI/UX & Frontend Developer          | [@Wilberforcedev](https://github.com/Wilberforcedev)     |
+| **Odhiambo M**       | Backend & Smart Contract Developer  | [@mickieodhiambo](https://github.com/mickieodhiambo) |
+
+
+## ⚙️ Setup & Installation
+`Clone the repository or download a Zipped File`
+`cd Shaji-WebApp`
+`Install dependencies`
+`npm install`
+`npm run dev`     

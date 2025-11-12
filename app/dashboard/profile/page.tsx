@@ -65,7 +65,7 @@ export default function ProfilePage() {
         setDocuments(data.documents.filter((d: Document) => d.verification_status === "verified"))
       }
     } catch (error) {
-      console.error("[v0] Error fetching documents:", error)
+      console.error("[ Error fetching documents:", error)
     }
   }
 
@@ -81,7 +81,7 @@ export default function ProfilePage() {
         setProfile(data.user)
       }
     } catch (error) {
-      console.error("[v0] Error updating profile:", error)
+      console.error(" Error updating profile:", error)
     }
   }
 
