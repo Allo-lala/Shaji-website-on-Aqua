@@ -188,7 +188,7 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">Partner Institutions</p>
               </div>
               <div>
-                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">2</div>
+                <div className="mb-2 text-4xl font-bold text-primary md:text-5xl">ALL</div>
                 <p className="text-muted-foreground">Countries Supported</p>
               </div>
             </div>
